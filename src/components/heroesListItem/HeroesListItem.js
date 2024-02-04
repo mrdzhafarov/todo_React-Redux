@@ -1,5 +1,5 @@
 
-const HeroesListItem = ({name, description, element}) => {
+const HeroesListItem = ({name, description, element, onDelete}) => {
 
     let elementClassName;
 
@@ -23,7 +23,7 @@ const HeroesListItem = ({name, description, element}) => {
     return (
         <li 
             className={`card flex-row mb-4 shadow-lg text-white ${elementClassName}`}>
-            <img src="http://www.stpaulsteinbach.org/wp-content/uploads/2014/09/unknown-hero.jpg" 
+            <img src="https://t4.ftcdn.net/jpg/03/21/43/07/360_F_321430761_qQi0CU9tzI5w1k1vJgdA02LMtXtsXvJE.jpg" 
                  className="img-fluid w-25 d-inline" 
                  alt="unknown hero" 
                  style={{'objectFit': 'cover'}}/>
@@ -32,7 +32,8 @@ const HeroesListItem = ({name, description, element}) => {
                 <h3 className="card-title">{name}</h3>
                 <p className="card-text">{description}</p>
             </div>
-            <span className="position-absolute top-0 start-100 translate-middle badge border rounded-pill bg-light">
+            <span onClick={onDelete} 
+                className="position-absolute top-0 start-100 translate-middle badge border rounded-pill bg-light">
                 <button type="button" className="btn-close btn-close" aria-label="Close"></button>
             </span>
         </li>
