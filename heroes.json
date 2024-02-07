@@ -1,28 +1,34 @@
 {
   "heroes": [
     {
-      "id": "9a122c72-f87d-433b-9044-176373627cea",
-      "name": "Beatrice Decker",
-      "description": "Autem amet anim ven",
-      "element": "wind"
-    },
-    {
-      "id": "88653bc0-4a4e-4262-bacc-d65d22b5eb49",
-      "name": "Amy Sanders",
-      "description": "Aut cum natus laboru",
+      "id": "b956c488-77fd-4316-990b-cc2b20499102",
+      "name": "Flynn Allison",
+      "description": "Velit cupidatat cons",
       "element": "earth"
     },
     {
-      "id": "34365741-5c7f-41b0-86ff-6d6179960650",
-      "name": "Dane Adkins",
-      "description": "Irure voluptatem rec",
-      "element": "fire"
+      "id": "b08fa221-5ddb-423b-8676-5f91db304848",
+      "name": "Rooney Michael",
+      "description": "Iure harum enim sint",
+      "element": "water"
     },
     {
-      "id": "1554c86b-2a28-44f4-87c7-578d9c7a139e",
-      "name": "Nichole Reyes",
-      "description": "Voluptate mollit sin",
+      "id": "0e749248-4d8a-41f1-bd05-f090541fd5ce",
+      "name": "Marny Morrow",
+      "description": "Aspernatur nulla dol",
       "element": "earth"
+    },
+    {
+      "id": "1390d2f1-ef87-435d-a72d-0127803d84df",
+      "name": "Shannon Mclaughlin",
+      "description": "Qui consectetur omni",
+      "element": "earth"
+    },
+    {
+      "id": "ba11d7cc-222a-4c0e-8133-3198d7970a38",
+      "name": "Marsden Stanton",
+      "description": "At ex laborum aut pe",
+      "element": "water"
     }
   ],
   "filters": [
