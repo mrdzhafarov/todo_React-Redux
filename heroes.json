@@ -1,24 +1,6 @@
 {
   "heroes": [
     {
-      "id": "b956c488-77fd-4316-990b-cc2b20499102",
-      "name": "Flynn Allison",
-      "description": "Velit cupidatat cons",
-      "element": "earth"
-    },
-    {
-      "id": "b08fa221-5ddb-423b-8676-5f91db304848",
-      "name": "Rooney Michael",
-      "description": "Iure harum enim sint",
-      "element": "water"
-    },
-    {
-      "id": "0e749248-4d8a-41f1-bd05-f090541fd5ce",
-      "name": "Marny Morrow",
-      "description": "Aspernatur nulla dol",
-      "element": "earth"
-    },
-    {
       "id": "1390d2f1-ef87-435d-a72d-0127803d84df",
       "name": "Shannon Mclaughlin",
       "description": "Qui consectetur omni",
@@ -29,6 +11,12 @@
       "name": "Marsden Stanton",
       "description": "At ex laborum aut pe",
       "element": "water"
+    },
+    {
+      "id": "daeec25e-2f7a-4365-86f9-67f904339aa3",
+      "name": "Azalia Barrera",
+      "description": "Tempora dolores blan",
+      "element": "earth"
     }
   ],
   "filters": [
