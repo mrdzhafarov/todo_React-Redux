@@ -1,9 +1,8 @@
-import {useHttp} from '../../hooks/http.hook';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
-
+import { nanoid } from '@reduxjs/toolkit'; 
 import { heroCreated } from '../../actions';
+import {useHttp} from '../../hooks/http.hook';
 
 const HeroesAddForm = () => {
     const [heroName, setHeroName] = useState('');
@@ -18,7 +17,7 @@ const HeroesAddForm = () => {
         e.preventDefault();
 
         const newHero = {
-            id: uuidv4(),
+            id: nanoid(),
             name: heroName,
             description: heroDescr,
             element: heroElement
