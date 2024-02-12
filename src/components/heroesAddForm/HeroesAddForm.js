@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { nanoid } from '@reduxjs/toolkit'; 
+import { nanoid } from '@reduxjs/toolkit';
 import {useHttp} from '../../hooks/http.hook';
+import store from '../../store/index';
 
+import { selectAll } from '../heroesFilters/filtersSlice';
 import { heroCreated } from '../heroesList/heroesSlice';
 
 const HeroesAddForm = () => {
@@ -10,13 +12,13 @@ const HeroesAddForm = () => {
     const [heroDescr, setHeroDescr] = useState('');
     const [heroElement, setHeroElement] = useState('');
 
-    const {filters, filtersLoadingStatus} = useSelector(state => state.filters);
+    const {filtersLoadingStatus} = useSelector(state => state.filters);
+    const filters = selectAll(store.getState());
     const dispatch = useDispatch();
     const {request} = useHttp();
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
-
         const newHero = {
             id: nanoid(),
             name: heroName,
@@ -24,12 +26,10 @@ const HeroesAddForm = () => {
             element: heroElement
         }
 
-       
         request("http://localhost:3001/heroes", "POST", JSON.stringify(newHero))
             .then(res => console.log(res, 'Отправка успешна'))
             .then(dispatch(heroCreated(newHero)))
             .catch(err => console.log(err));
-
 
         setHeroName('');
         setHeroDescr('');
@@ -42,8 +42,7 @@ const HeroesAddForm = () => {
         } else if (status === "error") {
             return <option>Ошибка загрузки</option>
         }
-   
-
+        
         if (filters && filters.length > 0 ) {
             return filters.map(({name, label}) => {
 

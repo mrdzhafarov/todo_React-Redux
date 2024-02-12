@@ -1,40 +1,69 @@
 {
   "heroes": [
     {
-      "id": "PCF0FmmJ8S1_WJwuoQz0r",
-      "name": "Mara Sims",
-      "description": "Totam ex aut suscipi",
+      "id": "eNzy-HUREdVyC1VV7JKYY",
+      "name": "Noah Parrish",
+      "description": "Est quis officia ne",
+      "element": "wind"
+    },
+    {
+      "id": "3mu_VHfaAiakFurWB-tLB",
+      "name": "Hanae Johnston",
+      "description": "Ut magnam incididunt",
+      "element": "wind"
+    },
+    {
+      "id": "c2VfQyugtq22P1OnuEGMd",
+      "name": "Ulric Porter",
+      "description": "Ipsum sit sit except",
       "element": "fire"
     },
     {
-      "id": "1jr7FXCE7VM8RHWLMiLJ-",
-      "name": "Carl Dunlap",
-      "description": "Minus error suscipit",
-      "element": "water"
+      "id": "3WkZASlWpMaPqVrAzrYka",
+      "name": "Marah Downs",
+      "description": "Ut et excepturi repr",
+      "element": "earth"
+    },
+    {
+      "id": "YL35-cGd8ekLy_VwGjuiw",
+      "name": "Michelle Luna",
+      "description": "Ut accusantium conse",
+      "element": "earth"
+    },
+    {
+      "id": "xv5mZG57ci7ANjURHBtCV",
+      "name": "Tamekah Waller",
+      "description": "Reiciendis ut alias ",
+      "element": "wind"
     }
   ],
   "filters": [
     {
+      "id": "all",
       "name": "all",
       "label": "Все",
       "className": "btn-outline-dark"
     },
     {
+      "id": "fire",
       "name": "fire",
       "label": "Огонь",
       "className": "btn-danger"
     },
     {
+      "id": "water",
       "name": "water",
       "label": "Вода",
       "className": "btn-primary"
     },
     {
+      "id": "wind",
       "name": "wind",
       "label": "Ветер",
       "className": "btn-success"
     },
     {
+      "id": "earth",
       "name": "earth",
       "label": "Земля",
       "className": "btn-secondary"
