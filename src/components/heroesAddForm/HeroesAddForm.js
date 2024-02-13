@@ -1,35 +1,31 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { nanoid } from '@reduxjs/toolkit';
-import {useHttp} from '../../hooks/http.hook';
-import store from '../../store/index';
+import { useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import store from '../../store';
 
 import { selectAll } from '../heroesFilters/filtersSlice';
-import { heroCreated } from '../heroesList/heroesSlice';
+import { useCreateHeroMutation } from '../../api/apiSlice';
 
 const HeroesAddForm = () => {
     const [heroName, setHeroName] = useState('');
     const [heroDescr, setHeroDescr] = useState('');
     const [heroElement, setHeroElement] = useState('');
 
+    const [createHero] = useCreateHeroMutation();
+
     const {filtersLoadingStatus} = useSelector(state => state.filters);
     const filters = selectAll(store.getState());
-    const dispatch = useDispatch();
-    const {request} = useHttp();
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
         const newHero = {
-            id: nanoid(),
+            id: uuidv4(),
             name: heroName,
             description: heroDescr,
             element: heroElement
         }
 
-        request("http://localhost:3001/heroes", "POST", JSON.stringify(newHero))
-            .then(res => console.log(res, 'Отправка успешна'))
-            .then(dispatch(heroCreated(newHero)))
-            .catch(err => console.log(err));
+        createHero(newHero).unwrap();
 
         setHeroName('');
         setHeroDescr('');
@@ -45,7 +41,7 @@ const HeroesAddForm = () => {
         
         if (filters && filters.length > 0 ) {
             return filters.map(({name, label}) => {
-
+                // eslint-disable-next-line
                 if (name === 'all')  return;
 
                 return <option key={name} value={name}>{label}</option>

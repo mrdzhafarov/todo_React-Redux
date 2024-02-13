@@ -1,40 +1,22 @@
 {
   "heroes": [
     {
-      "id": "eNzy-HUREdVyC1VV7JKYY",
-      "name": "Noah Parrish",
-      "description": "Est quis officia ne",
-      "element": "wind"
-    },
-    {
-      "id": "3mu_VHfaAiakFurWB-tLB",
-      "name": "Hanae Johnston",
-      "description": "Ut magnam incididunt",
-      "element": "wind"
-    },
-    {
-      "id": "c2VfQyugtq22P1OnuEGMd",
-      "name": "Ulric Porter",
-      "description": "Ipsum sit sit except",
+      "id": 1,
+      "name": "Первый герой",
+      "description": "Первый герой в рейтинге!",
       "element": "fire"
     },
     {
-      "id": "3WkZASlWpMaPqVrAzrYka",
-      "name": "Marah Downs",
-      "description": "Ut et excepturi repr",
-      "element": "earth"
+      "id": 3,
+      "name": "Морской герой",
+      "description": "Как аквамен, но не из DC",
+      "element": "water"
     },
     {
-      "id": "YL35-cGd8ekLy_VwGjuiw",
-      "name": "Michelle Luna",
-      "description": "Ut accusantium conse",
-      "element": "earth"
-    },
-    {
-      "id": "xv5mZG57ci7ANjURHBtCV",
-      "name": "Tamekah Waller",
-      "description": "Reiciendis ut alias ",
-      "element": "wind"
+      "id": "62cc1bca-7e0e-4821-a5b0-6f9abdd14ba3",
+      "name": "Ashton Witt",
+      "description": "Provident est quam",
+      "element": "fire"
     }
   ],
   "filters": [

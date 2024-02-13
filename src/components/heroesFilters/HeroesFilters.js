@@ -16,6 +16,8 @@ const HeroesFilters = () => {
 
     useEffect(() => {
         dispatch(fetchFilters(request));
+
+        // eslint-disable-next-line
     }, []);
 
     if (filtersLoadingStatus === "loading") {
