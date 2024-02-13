@@ -42,7 +42,7 @@ const {actions, reducer} = filtersSlice;
 
 export default reducer;
 
-export const { selectAll } = filtersAdapter.getSelectors(state => state.filters);
+export const {selectAll} = filtersAdapter.getSelectors(state => state.filters);
 
 export const {
     filtersFetching,
